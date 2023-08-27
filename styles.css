@@ -1,17 +1,25 @@
 @font-face {
-  font-family: "Gotham rounded";
-  src: url(assets/Gotham-Rounded-Medium.otf);
+  font-family: "Aurora";
+  src: url(assets/Aurora.otf);
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: "Gotham rounded", sans-serif;
+  font-family: "Gideon Roman", cursive;
 }
 
 body {
-  background: linear-gradient(to right, hsl(200, 54%, 16%), hsl(180, 2%, 36%));
+  background: rgb(22, 22, 22);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 22, 22, 1) 0%,
+    rgba(193, 135, 68, 1) 31%,
+    rgba(196, 114, 79, 1) 65%,
+    rgba(159, 121, 68, 1) 72%,
+    rgba(143, 108, 86, 1) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,12 +27,25 @@ body {
   overflow: hidden;
 }
 
+section {
+  display: block;
+  text-align: center;
+  height: 600px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: white;
+  font-family: "Aurora", sans-serif;
+}
+
 .clock {
   width: 300px;
   height: 300px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgb(237, 237, 237);
   border-radius: 50%;
-  border: 10px solid gray;
+  border: 20px solid rgba(97, 53, 23, 0.784);
   position: relative;
 }
 
@@ -35,7 +56,7 @@ body {
   height: 100%;
   text-align: center;
   transform: rotate(var(--rotation));
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .clock .number1 {
