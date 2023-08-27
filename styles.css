@@ -8,6 +8,7 @@
 *::before {
   box-sizing: border-box;
   font-family: "Gideon Roman", cursive;
+  font-weight: 700;
 }
 
 body {
@@ -35,8 +36,8 @@ section {
 
 h1 {
   font-size: 40px;
-  margin-bottom: 40px;
-  color: white;
+  margin-bottom: 45px;
+  color: rgb(49, 38, 38);
   font-family: "Aurora", sans-serif;
 }
 
@@ -45,7 +46,7 @@ h1 {
   height: 300px;
   background-color: rgb(237, 237, 237);
   border-radius: 50%;
-  border: 20px solid rgba(97, 53, 23, 0.784);
+  border: 20px solid rgb(92, 45, 14);
   position: relative;
 }
 
@@ -150,8 +151,18 @@ h1 {
   .clock {
     width: 250px;
     height: 250px;
+    margin: auto;
   }
   .clock .number {
     font-size: 1.2rem;
+  }
+  .clock {
+    border: 10px solid rgb(92, 45, 14);
+  }
+}
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 30px;
   }
 }
